@@ -10,6 +10,8 @@ import Home from './containers/Home';
 import Products from './containers/Products';
 import Cart from './containers/Cart';
 
+import { plates, sauces, parsleys } from './database/products';
+
 
 export default class App extends React.Component {
   constructor(props) {
@@ -43,11 +45,16 @@ export default class App extends React.Component {
       <Cart />
     ),
     products: (
-      <Products />
+      <Products
+        plates={plates}
+        sauces={sauces}
+        parsleys={parsleys}
+      />
     )
   }
 
   render () {
+    console.log(plates);
     return (
       <div>
         <Topbar

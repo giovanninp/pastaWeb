@@ -4,7 +4,9 @@ import { Container } from 'react-bootstrap';
 export default class Cart extends React.Component {
   render() {
     return(
-      <Container>Cart</Container>
+      <Container>
+        <h3>Carrinho</h3>
+      </Container>
     )
   }
 }
