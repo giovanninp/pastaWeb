@@ -6,7 +6,7 @@ import ProductsList from '../../components/ProductsList';
 
 export default class Products extends React.Component {
   render() {
-    const { plates, sauces, parsleys } = this.props;
+    const { plates } = this.props;
     return(
       <Container>
         <Row>
@@ -14,14 +14,14 @@ export default class Products extends React.Component {
             <h3>Menu</h3>
           </Col>
         </Row>
-        <Row id="plates-list">
-          <Col>
+        <Row className="section justify-content-md-center" id="plates-list">
+          <Col xs={12}>
             <ProductsList
               title={"Pratos"}
               products={plates}
             />
         </Col>
-        </Row>,
+        </Row>
       </Container>
     )
   }

@@ -1,6 +1,6 @@
 const session = {
   logged:false,
-  currentPage:"home",
+  currentPage:"products",
   currentItems:[],
   localItems:[],
   currentModal:false

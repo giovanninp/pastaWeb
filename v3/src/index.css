@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#main-content {
+  padding-bottom: 3rem;
+}
+
+.section {
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.card {
+  border-radius: 10px;
+  overflow-x: hidden;
+}
+
+.card::-webkit-scrollbar {
+  display: none;
+}

@@ -2,4 +2,18 @@
     margin: 1rem;
     color: white;
     font-weight: bold;
+    background-color: black;
+    border: 1px solid white;
+    animation-name: "card";
+    animation-duration: 500ms;
+}
+
+@-webkit-keyframes card {
+    from {width: 18rem};
+    to {width: 18rem}
+}
+
+
+.card #openCardBtn {
+    border-radius: 1rem;
 }

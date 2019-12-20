@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import session from './models/session';
@@ -30,11 +29,21 @@ export default class App extends React.Component {
     this.setState({stateType:actual});
     console.log(this.state);
   }
+  //To get card value
+  getTargetValue = (event) => {
+    const { value } = event.target;
+    return value;
+  }
 
   handleChangePage(event) {
     const { value } = event.target;
     this.handleChangeContent("session","currentPage",value);
     console.log(value);
+  }
+
+  handleOpenModal(event) {
+    const { value } = event.target;
+    return value;
   }
   
   screens = {
@@ -58,6 +67,7 @@ export default class App extends React.Component {
     return (
       <div>
         <Topbar
+          session={this.state.session}
           handleChangePage={this.handleChangePage}
         />
         <div id="main-content">
